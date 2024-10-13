@@ -1,7 +1,7 @@
 variable "ami_id" {
   description = "The AMI ID for the instances"
   type        = string
-  default     = "ami-0b8c6b923777519db"
+  default     = "ami-005fc0f236362e99f"
 }
 
 variable "instance_type" {
@@ -14,7 +14,7 @@ variable "instance_type" {
 variable "key_name" {
   description = "The key name for the instances"
   type        = string
-  default     = "DevOps_Train2024"
+  default     = "test-user"
 }
 
 ###########################
@@ -22,7 +22,7 @@ variable "key_name" {
 ##########################
 variable "security_group_id" {
   type    = string
-  default = "sg-07b8b3043804ede33"
+  default = "sg-09aab246a7a1c950f"
 }
 
 # variable "subnet_id" {
@@ -41,7 +41,7 @@ variable "security_group_id" {
 variable "subnet_id" {
   description = "The subnet ID where the instance will be deployed"
   type        = string
-  default     = "subnet-0ea3d234fba84eef9"
+  default     = "subnet-012e697004655c9a0"
 }
 
 # variable "db_name" {
@@ -78,17 +78,17 @@ variable "subnet_id" {
 variable "s3_bucket" {
   description = "The name of the S3 bucket for storing Terraform state"
   type        = string
-  default     = "terraform-state-bucket-fusi"
+  default     = "terraform-state-bucket-gabe01"
 }
 
 variable "dynamodb_table" {
   description = "The name of the DynamoDB table for state locking"
   type        = string
-  default     = "terraform-lock-table"
+  default     = "terraform-lock-table-gabe01"
 }
 
 variable "main-region" {
   description = "The AWS region to deploy resources"
   type        = string
-  default     = "us-west-2"
+  default     = "us-east-1"
 }
