@@ -6,6 +6,7 @@ variable "region" {
 variable "ami_id" {
   description = "The AMI ID for the EC2 instance"
   type        = string
+  default     = "ami-005fc0f236362e99f"
 }
 
 variable "instance_type" {
@@ -16,13 +17,13 @@ variable "instance_type" {
 variable "key_name" {
   description = "The key name for the Jenkins server"
   type        = string
-  default     = "DevOps_Train2024"
+  default     = "test-user"
 }
 
 variable "main-region" {
   description = "The AWS region to deploy resources"
   type        = string
-  default     = "us-west-2"
+  default     = "us-east-1"
 }
 
 variable "security_group_id" {
